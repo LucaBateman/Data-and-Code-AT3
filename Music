@@ -1,0 +1,27 @@
+sample :ambi_lunar_land
+
+in_thread do
+  16.times do
+    use_synth :dull_bell
+    play_chord chord(:d2, :major)
+    sleep 0.25
+  end
+  16.times do
+    play_chord chord(:g2, :major)
+    sleep 0.25
+  end
+end
+
+
+
+in_thread delay: 8 do
+  16.times do
+    use_synth :dull_bell
+    play_chord chord(:d2, :major)
+    sleep 0.25
+  end
+  16.times do
+    play_chord chord(:g2, :major)
+    sleep 0.25
+  end
+end
